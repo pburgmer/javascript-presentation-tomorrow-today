@@ -28,14 +28,16 @@
 $theCodeCampus_orange: #ed5502;
 @import "w11k-slides/dist/variables";
 
-//$w11k-slides-color-1: #2D5352;
-//$w11k-slides-color-3: #AD6A6C;
+$w11k-slides-color-1: #77cc22;
+$w11k-slides-color-3: #AD6A6C;
 //
-//$w11k-slides-title-top-background: $w11k-slides-color-1;
-//$w11k-slides-title-top-text-color: white;
-//$w11k-slides-title-separator-color: darken($w11k-slides-color-1, 8%);
-$w11k-slides-title-bottom-text-color: white;
-$w11k-slides-title-bottom-background: $theCodeCampus_orange;
+//$w11k-slides-title-top-background: transparent;
+$w11k-slides-title-top-background: rgba(119, 204, 34, 0.3);
+$w11k-slides-title-top-text-color: $w11k-slides-color-1;
+$w11k-slides-title-separator-color: $w11k-slides-color-1;
+$w11k-slides-title-bottom-text-color: $w11k-slides-color-1;
+$w11k-slides-title-bottom-background: transparent;
+//$w11k-slides-title-bottom-background: rgba(119, 204, 34, 0.2);
 
 $w11k-cornerRibbon-distance: 5em;
 
@@ -136,12 +138,16 @@ pre.prettyprint.linenums ol.linenums>li {
 }
 
 .slide.title {
+  background-image: url('assets/images/enterjs-wall.png');
+  background-size: cover;
+
   .logo img {
     margin: 0 auto 0.5em;
   }
 
   h1, h1 small {
     color: $w11k-slides-title-bottom-text-color;
+    text-shadow: 0 0 2px black;
   }
 
   div.logo img {
