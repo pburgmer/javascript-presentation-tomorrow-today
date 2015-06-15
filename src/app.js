@@ -36,7 +36,6 @@ angular.module('app').config (function (slidesConfig) {
     'features/classes',
     'features/modules',
     'features/arrow-functions',
-    'features/generators',
 
     'further-reading',
     
