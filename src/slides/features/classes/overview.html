@@ -1,0 +1,33 @@
+<div w11k-slide-master="regular" class="overview">
+  <div w11k-slide-part-source="header">
+    Klassen
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Andere Schreibweise für existierende Funktionalität</li>
+      <li>Kann fast vollständig in ES5 übersetzt werden</li>
+      <li>Vererbung bei Transpiler schwierig</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Class in ES6">
+class Point {
+  constructor(x, y) { this.x = x; this.y = y; }
+  toString() { return `(${this.x}, ${this.y})`; }
+}
+var point = new Point();
+</pre>
+
+<pre w11k-pretty-print lang="js" title="Class transpiled to ES5">
+var Point = (function () {
+  function Point(x, y) { this.x = x; this.y = y; }
+  Point.prototype.toString = function () {
+    return "(" + this.x + ", " + this.y + ")";
+  };
+  return Point;
+})();
+var point = new Point();
+</pre>
+  </div>
+
+</div>

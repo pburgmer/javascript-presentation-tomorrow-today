@@ -1,0 +1,28 @@
+<div w11k-slide-master="regular" class="overview">
+  <div w11k-slide-part-source="header">
+    Services in AngularJS<br/>
+    <small>mit Klassen</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Service in AngularJS mit ES6 Class">
+var http = Symbol();
+class MyService {
+
+  constructor($http) {
+    this[http] = $http;
+  }
+
+  doSomething() {}
+}
+MyService.$inject = ["$http"];
+angular.module("myModule").service("myService", MyService);
+</pre>
+
+  </div>
+
+</div>

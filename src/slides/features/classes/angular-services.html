@@ -1,0 +1,30 @@
+<div w11k-slide-master="regular" class="overview">
+  <div w11k-slide-part-source="header">
+    Services in AngularJS<br/>
+    <small>ohne Klassen</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Services in AngularJS: allgemeine Objekte, die Funktionalität kapseln</li>
+      <li>Werden vom Framework instanziiert und verwaltet</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Module#service mit Konstruktor-Funktion">
+angular.module("myModule").service("myService", function ($http) {
+  this.doSomething = function () { };
+});
+// service = new myService();
+</pre>
+
+<pre w11k-pretty-print lang="js" title="Module#factory mit Factory-Funktion">
+angular.module("myModule").factory("myService", function ($http) {
+  var service = {}; // var service = function () {};
+  service.doSomething = function () { };
+  return service;
+});
+// service = myService();
+</pre>
+  </div>
+
+</div>

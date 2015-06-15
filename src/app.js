@@ -33,12 +33,16 @@ angular.module('app').config (function (slidesConfig) {
     'features/promises/q',
     'features/promises/es6',
 
-    'features/classes',
+    'features/classes/overview',
+    'features/classes/angular-services',
+    'features/classes/angular-services-with-classes',
+
+
     'features/modules',
     'features/arrow-functions',
 
     'further-reading',
-    
+
     'end'
   ];
 
