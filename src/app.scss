@@ -85,6 +85,35 @@ pre.prettyprint.linenums ol.linenums>li {
   text-transform: none;
 }
 
+.slides .slide .content {
+  span.source {
+    color: $gray-light;
+    //font-size: 0.6em;
+  }
+
+  ul.source {
+    font-size: 0.6em;
+
+    &:before {
+      content: "Quellen:";
+      display: block;
+    }
+
+    &:before , li, li a {
+      color: $gray-light;
+    }
+
+    li {
+      padding-left: (1 / 0.6)+em;
+    }
+
+    li:before {
+      display: none;
+    }
+
+  }
+}
+
 // ****************************************************************************************************
 // slides content
 // ****************************************************************************************************

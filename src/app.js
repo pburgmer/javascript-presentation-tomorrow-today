@@ -14,6 +14,31 @@ angular.module('app').config (function (slidesConfig) {
     'overview',
     'about-me',
 
+    'overview/es5',
+    'overview/es6',
+    'overview/es7',
+    'overview/problems',
+    'overview/new-features',
+    'overview/polyfill',
+    'overview/transpiler',
+    'overview/typescript',
+
+    'setup/package-manager',
+    'setup/module-loader',
+    'setup/transpiler',
+    'setup/build',
+    'setup/demo',
+
+    'features/promises/overview',
+    'features/promises/q',
+    'features/promises/es6',
+
+    'features/classes',
+    'features/modules',
+    'features/arrow-functions',
+    'features/generators',
+
+    'further-reading',
     'end'
   ];
 

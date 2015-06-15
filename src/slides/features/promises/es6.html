@@ -1,0 +1,22 @@
+<div w11k-slide-master="regular" class="overview">
+  <div w11k-slide-part-source="header">
+    Promises<br/>
+    <small>ES6</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Keine Biblothek notwendig, Teil der Standard-Bibliothek</li>
+      <li>Vordefinierter Konstruktor</li>
+    </ul>
+
+    <pre w11k-pretty-print lang="js">
+function asyncFunc() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function () {
+      resolve(); // or reject();
+  }, 500);
+}
+</pre>
+  </div>
+</div>

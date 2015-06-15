@@ -1,0 +1,35 @@
+<div w11k-slide-master="regular" class="overview">
+  <div w11k-slide-part-source="header">
+    Promises<br/>
+    <small><a href="https://github.com/kriskowal/q" target="_blank">Kris Kowal's Q</a></small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Weit verbreitete Biblothek (z.B. in <a href="https://angularjs.org/" target="_blank">AngularJS</a>)
+      </li>
+      <li>Andere API als ES6 Promises: Promise & Deferred</li>
+      <li>In AngularJS 1.3 <code>$q</code> als Factory-Funktion</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Deferred API of Q">
+function asyncFunc() {
+  var deferred = Q.defer();
+  setTimeout(function () {
+    deferred.resolve('result'); // or deferred.reject('error');
+  }, 500);
+
+  return deferred.promise;
+}
+</pre>
+
+<pre w11k-pretty-print lang="js" title="Factory API of $q in AngularJS">
+function asyncFunc() {
+  return $q(function(resolve, reject) {
+    $timeout(function () {
+      resolve(); // or reject();
+  }, 500);
+}
+</pre>
+  </div>
+</div>
