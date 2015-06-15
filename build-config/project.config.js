@@ -32,6 +32,10 @@ module.exports = {
 
   app: {
     files: {
+      templates: [
+        '**/*.html',
+        '!assets/**/*.html'
+      ],
       templates2js: [
         'slides/**/*.html'
       ],
