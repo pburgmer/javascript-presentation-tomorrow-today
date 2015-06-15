@@ -23,10 +23,10 @@ angular.module('app').config (function (slidesConfig) {
     'overview/transpiler',
     'overview/typescript',
 
-    'setup/package-manager',
-    'setup/module-loader',
-    'setup/transpiler',
-    'setup/build',
+    //'setup/package-manager',
+    //'setup/module-loader',
+    //'setup/transpiler',
+    //'setup/build',
     'setup/demo',
 
     'features/promises/overview',
@@ -39,6 +39,7 @@ angular.module('app').config (function (slidesConfig) {
     'features/generators',
 
     'further-reading',
+    
     'end'
   ];
 
