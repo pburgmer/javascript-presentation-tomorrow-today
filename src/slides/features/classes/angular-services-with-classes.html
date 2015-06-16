@@ -9,12 +9,12 @@
 
     </ul>
 
-<pre w11k-pretty-print lang="js" title="Service in AngularJS mit ES6 Class">
+<pre w11k-pretty-print lang="js" title="Service in AngularJS mit ES6 Klasse">
 var http = Symbol();
 class MyService {
 
   constructor($http) {
-    this[http] = $http;
+    this[http] = $http; // pseudo private
   }
 
   doSomething() {}

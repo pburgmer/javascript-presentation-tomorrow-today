@@ -10,7 +10,7 @@
       <li>Vererbung bei Transpiler schwierig</li>
     </ul>
 
-<pre w11k-pretty-print lang="js" title="Class in ES6">
+<pre w11k-pretty-print lang="js" title="Klasse in ES6">
 class Point {
   constructor(x, y) { this.x = x; this.y = y; }
   toString() { return `(${this.x}, ${this.y})`; }
@@ -18,7 +18,7 @@ class Point {
 var point = new Point();
 </pre>
 
-<pre w11k-pretty-print lang="js" title="Class transpiled to ES5">
+<pre w11k-pretty-print lang="js" title="Klasse übersetzt in ES5">
 var Point = (function () {
   function Point(x, y) { this.x = x; this.y = y; }
   Point.prototype.toString = function () {
