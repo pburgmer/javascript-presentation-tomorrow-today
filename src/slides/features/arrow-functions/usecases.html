@@ -1,0 +1,25 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Arrow Functions<br/>
+    <small>Anwendungsfälle</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Promise Handler</li>
+      <li>Event Handler</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Funktion mit gleichem Kontext">
+function TestCtrl ($rootScope, DataService) {
+  // no more var that = this;
+  this.data = []; this.lastEvent = undefined;
+  DataService.get().then(data => { this.data = data; });
+  $rootScope.$on('eventName', (event) => { this.lastEvent = event.name});
+}
+angular.module('myModule').controller('TestCtrl', TestCtrl)
+</pre>
+
+  </div>
+
+</div>

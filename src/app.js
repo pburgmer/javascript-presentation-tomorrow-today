@@ -39,7 +39,8 @@ angular.module('app').config (function (slidesConfig) {
 
 
     'features/modules',
-    'features/arrow-functions',
+    'features/arrow-functions/overview',
+    'features/arrow-functions/usecases',
 
     'further-reading',
 

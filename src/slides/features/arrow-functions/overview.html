@@ -1,0 +1,25 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Arrow Functions
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Kurzschreibweise für Funktionen</li>
+      <li><code>(param) => { statement; }</code> statt <code>function (param) { statement; }</code></li>
+      <li>Aber: kein eigener lexikalischer Kontext, this vom äußeren Kontext</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Funktion mit gleichem Kontext">
+class Person {
+  constructor(name, friends) { this.name = name; this.friends = friends; }
+  printFriends() {
+    this.friends.forEach(friend =>
+      console.log(this.name + " knows " + friend));
+  }
+}
+</pre>
+
+  </div>
+
+</div>
