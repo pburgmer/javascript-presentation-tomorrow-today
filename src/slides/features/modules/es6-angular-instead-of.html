@@ -1,0 +1,28 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Module<br/>
+    <small>und AngularJS</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+
+<pre w11k-pretty-print lang="js" title="ES6 Modul-System statt AngularJS Module-System">
+import angular from 'angular';
+import 'angular-ui-router';
+
+import './index/home-index';
+import 'app/routes/auth-required';
+
+var appModule = angular.module('app');
+appModule.config(function homeRoute($stateProvider) {
+    $stateProvider.state('app.auth-required.home', {
+      abstract: true,
+      template: '<ui-view></ui-view>'
+    });
+  }
+);
+</pre>
+
+  </div>
+
+</div>

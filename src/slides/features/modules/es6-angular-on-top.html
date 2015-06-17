@@ -1,0 +1,35 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Module<br/>
+    <small>und AngularJS</small>
+  </div>
+
+  <div w11k-slide-part-source="content">
+
+<pre w11k-pretty-print lang="js" title="ES6 Modul-System über AngularJS Module-System">
+import angular from 'angular';
+import 'angular-ui-router';
+
+import {homeIndexModule} from './index/home-index';
+import {authRequiredModule} from 'app/routes/auth-required';
+
+export var homeModule = angular.module('app.route.home', [
+  'ui.router',
+  authRequiredModule.name,
+  homeIndexModule.name
+]);
+homeModule.config(function homeRoute($stateProvider) {
+    $stateProvider.state('app.auth-required.home', {
+      abstract: true,
+      template: '<ui-view></ui-view>'
+    });
+  }
+);
+</pre>
+
+    <ul class="source">
+      <li><a href="https://github.com/gocardless/es6-angularjs" target="_blank">gocardless/es6-angularjs</a></li>
+    </ul>
+  </div>
+
+</div>
