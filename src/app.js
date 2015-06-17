@@ -29,6 +29,8 @@ angular.module('app').config (function (slidesConfig) {
     //'setup/build',
     'setup/demo',
 
+    'features/title',
+
     'features/promises/overview',
     'features/promises/q',
     'features/promises/es6',

@@ -81,8 +81,14 @@ pre.prettyprint.linenums ol.linenums>li {
   margin-left: 0.1em;
 }
 
-.slides .slide.centered .header .pre {
-  text-transform: none;
+.slides .slide.centered .header {
+  .pre {
+    text-transform: none;
+  }
+
+  h2 a {
+    color: inherit;
+  }
 }
 
 .slides .slide .content {
