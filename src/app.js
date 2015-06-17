@@ -23,10 +23,10 @@ angular.module('app').config (function (slidesConfig) {
     'overview/transpiler',
     'overview/typescript',
 
-    //'setup/package-manager',
-    //'setup/module-loader',
-    //'setup/transpiler',
-    //'setup/build',
+    'setup/title',
+    'setup/package-manager',
+    'setup/module-loader',
+    'setup/transpiler',
     'setup/demo',
 
     'features/title',
