@@ -99,13 +99,8 @@ pre.prettyprint.linenums ol.linenums>li {
     //font-size: 0.6em;
   }
 
-  ul.source {
+  ul.source, ul.see-also {
     font-size: 0.6em;
-
-    &:before {
-      content: "Quellen:";
-      display: block;
-    }
 
     &:before , li, li a {
       color: $gray-light;
@@ -118,7 +113,20 @@ pre.prettyprint.linenums ol.linenums>li {
     li:before {
       display: none;
     }
+  }
 
+  ul.source {
+    &:before {
+      content: "Quellen:";
+      display: block;
+    }
+  }
+
+  ul.see-also {
+    &:before {
+      content: "Infos:";
+      display: block;
+    }
   }
 }
 

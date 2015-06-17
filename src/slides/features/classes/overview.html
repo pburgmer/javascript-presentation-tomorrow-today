@@ -7,7 +7,7 @@
     <ul>
       <li>Andere Schreibweise für existierende Funktionalität</li>
       <li>Kann fast vollständig in ES5 übersetzt werden</li>
-      <li>Vererbung bei Transpiler schwierig</li>
+      <li>Vererbung per Transpiler nicht zu 100% möglich</li>
     </ul>
 
 <pre w11k-pretty-print lang="js" title="Klasse in ES6">
@@ -15,7 +15,6 @@ class Point {
   constructor(x, y) { this.x = x; this.y = y; }
   toString() { return `(${this.x}, ${this.y})`; }
 }
-var point = new Point();
 </pre>
 
 <pre w11k-pretty-print lang="js" title="Klasse übersetzt in ES5">
@@ -26,7 +25,6 @@ var Point = (function () {
   };
   return Point;
 })();
-var point = new Point();
 </pre>
   </div>
 
