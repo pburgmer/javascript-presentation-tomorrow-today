@@ -15,7 +15,7 @@ function TestCtrl ($rootScope, DataService) {
   // no more var that = this;
   this.data = []; this.lastEvent = undefined;
   DataService.get().then(data => { this.data = data; });
-  $rootScope.$on('eventName', (event) => { this.lastEvent = event.name});
+  $rootScope.$on('eventName', event => { this.lastEvent = event.name});
 }
 angular.module('myModule').controller('TestCtrl', TestCtrl)
 </pre>

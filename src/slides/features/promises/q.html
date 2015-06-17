@@ -26,9 +26,7 @@ function asyncFunc() {
 <pre w11k-pretty-print lang="js" title="Factory API of $q in AngularJS">
 function asyncFunc() {
   return $q(function(resolve, reject) {
-    $timeout(function () {
-      resolve(); // or reject();
-  }, 500);
+    $timeout(function () { resolve(); /* or reject(); */ }, 500);
 }
 </pre>
   </div>
