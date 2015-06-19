@@ -1,6 +1,6 @@
 # JavaScript von Morgen schon heute
 
-Dieses Repository enthält die Präsentation zu meinem Vortrag *JavaScript von Morgen schon heute*. Ein PDF-Export ist unter [etc/export](https://github.com/pburgmer/javascript-presentation-tomorrow-today/tree/master/etc/export) zu finden.
+Dieses Repository enthält die Präsentation zu meinem Vortrag *JavaScript von Morgen schon heute*. Ein PDF-Export ist unter [etc/export](https://github.com/pburgmer/javascript-presentation-tomorrow-today/tree/master/etc/export) zu finden. Die zugehörige Demo-Anwedung gibt es unter [pburgmer/angularjs-demo-es6](https://github.com/pburgmer/angularjs-demo-es6)
 
 ## Zusammenfassung
 
@@ -14,9 +14,9 @@ Philipp Burgmer studierte an der Hochschule Karlsruhe Informatik und arbeitet al
 
 ## Setup
 
-Die Präsentation ist als Web-Anwendung mit AngularJS und w11k-slides umgesetzt. Um sie lokal laufen zu lassen genügen folgende Aufrufe nach dem Checkout. Anschließend läuft ein Server auf Port 8000.
+Die Präsentation ist als Web-Anwendung mit [AngularJS](https://angularjs.org/) und [w11k-slides](https://github.com/w11k/w11k-slides) umgesetzt. Um sie lokal laufen zu lassen genügen folgende Aufrufe nach dem Checkout. Anschließend läuft ein lokaler Server (Port siehe Konsolenausgabe).
 
 ```
 npm install
-grunt dist
+npm run dist
 ```
