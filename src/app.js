@@ -21,6 +21,7 @@ angular.module('app').config (function (slidesConfig) {
     'overview/polyfill',
     'overview/transpiler',
     'overview/typescript',
+    'overview/typescript-migration',
 
     'setup/title',
     'setup/package-manager',
