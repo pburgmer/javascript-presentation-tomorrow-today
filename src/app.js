@@ -3,8 +3,7 @@
 angular.module('app', [
   'app.templates',
   'w11k.slides',
-  'w11k.slides.template',
-  'ngSanitize'
+  'w11k.slides.template'
 ]);
 
 angular.module('app').config (function (slidesConfig) {
