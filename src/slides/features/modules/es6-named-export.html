@@ -1,0 +1,27 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    ES6 Module<br/>
+    <small>Named Export &amp; Import</small>
+  </span>
+
+  <div w11k-slide-part-source="content">
+
+<pre w11k-pretty-print lang="js" title="lib.js mit Named-Export">
+var hidden = 0;
+export function state() {
+  return hidden++;
+}
+</pre>
+
+<pre w11k-pretty-print lang="js" title="Gezielt importieren per Namen">
+import { state } from './lib';
+state(1);
+</pre>
+
+<pre w11k-pretty-print lang="js" title="Alles importieren mit Namespace">
+import * as lib from './lib';
+lib.state(1);
+</pre>
+
+  </div>
+</div>

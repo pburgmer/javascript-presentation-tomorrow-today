@@ -34,8 +34,10 @@ angular.module('app').config (function (slidesConfig) {
     'features/promises/q',
     'features/promises/es6',
 
-    'features/modules/overview',
-    'features/modules/problems',
+    'features/modules/es5',
+    'features/modules/es6',
+    'features/modules/es6-named-export',
+    'features/modules/es6-default-export',
     'features/modules/es6-angular',
     'features/modules/es6-angular-on-top',
     'features/modules/es6-angular-instead-of',

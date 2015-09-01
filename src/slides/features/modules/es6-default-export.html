@@ -1,0 +1,26 @@
+<div w11k-slide-master="regular">
+  <span w11k-slide-part-source="header">
+    ES6 Module<br/>
+    <small>Default Export &amp; Import</small>
+  </span>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Export <code>lib.js</code></li>
+    </ul>
+<pre w11k-pretty-print lang="js">
+var hidden = 0;
+export default function() {
+  return hidden++;
+}
+</pre>
+
+    <ul>
+      <li>Import</li>
+    </ul>
+<pre w11k-pretty-print lang="js">
+import state from './lib';
+state(1);
+</pre>
+  </div>
+</div>

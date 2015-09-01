@@ -1,23 +1,26 @@
 <div w11k-slide-master="regular">
   <div w11k-slide-part-source="header">
     Module<br/>
-    <small>und AngularJS</small>
+    <small>AngularJS</small>
   </div>
 
   <div w11k-slide-part-source="content">
 
-<pre w11k-pretty-print lang="js" title="ES6 Modul-System statt AngularJS Module-System">
+
+<pre w11k-pretty-print lang="js" title="Nur ein AngularJS Modul">
 import angular from 'angular';
 import 'angular-ui-router';
 
-import './index/home-index';
-import 'app/routes/auth-required';
+export var app = angular.module('app', ['ui.router']);
+</pre>
+    
+<pre w11k-pretty-print lang="js" title="ES6 Modul-System statt AngularJS Modul-System">
+import ngModule from 'app/module';
+import 'angular-ui-router';
 
-var appModule = angular.module('app');
-appModule.config(function homeRoute($stateProvider) {
+ngModule.config(function ($stateProvider) {
     $stateProvider.state('app.auth-required.home', {
-      abstract: true,
-      template: '<ui-view></ui-view>'
+      abstract: true, template: '<ui-view></ui-view>'
     });
   }
 );
