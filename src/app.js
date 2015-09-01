@@ -50,6 +50,12 @@ angular.module('app').config (function (slidesConfig) {
     'features/arrow-functions/overview',
     'features/arrow-functions/usecases',
 
+    'typescript/title',
+    'typescript/static-types',
+    'typescript/type-inference',
+    'typescript/structural-typing',
+    'typescript/additional-features',
+
     'further-reading',
 
     'end'

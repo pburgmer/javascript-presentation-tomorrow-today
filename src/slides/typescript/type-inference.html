@@ -1,0 +1,21 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Type Inference
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Typen müssen nicht überall angegeben und wiederholt werden</li>
+      <li>Compiler kennt Typen aus Kontext</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js">
+var x = 3; // x: Number
+
+window.onmousedown = function(mouseEvent) {
+    console.log(mouseEvent.buton);  //<- Error
+};
+</pre>
+  </div>
+
+</div>

@@ -1,0 +1,23 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Strukturelle Typen
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Auch <i>Duck-Typing</i> genannt</li>
+      <li>Typen sind kompatibel wenn geforderte Properties da sind</li>
+      <li><i>Was ist da, und nicht woher kommt es</i></li>
+    </ul>
+
+<pre w11k-pretty-print lang="js">
+interface Named { name: string; }
+class Person { name: string; }
+
+var p: Named;
+// OK, because of structural typing
+p = new Person();
+</pre>
+  </div>
+
+</div>

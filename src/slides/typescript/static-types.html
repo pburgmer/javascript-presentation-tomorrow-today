@@ -1,0 +1,29 @@
+<div w11k-slide-master="regular">
+  <div w11k-slide-part-source="header">
+    Statische Typen
+  </div>
+
+  <div w11k-slide-part-source="content">
+    <ul>
+      <li>Typen nur zur Entwicklungszeit vorhanden</li>
+      <li>Werden von Compiler gelöscht</li>
+      <li>Vorteile: Refactorings, Code Completion und Navigation</li>
+    </ul>
+
+    <ul>
+      <li>Basis Type: Boolean, Number, String, Array, Enum, Any, Void</li>
+      <li>Eigene Typen über Klassen und Interfaces</li>
+    </ul>
+
+<pre w11k-pretty-print lang="js" title="Compile-Error">
+function greeter(person: string) {
+    return "Hello, " + person;
+}
+
+var user = [0, 1, 2]; // user: array
+
+document.body.innerHTML = greeter(user);
+</pre>
+  </div>
+
+</div>
